@@ -1,0 +1,63 @@
+<!-- Augusto César Freitas e Silva -->
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IMC</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" charset="utf-8">
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+
+    <script src="script.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="ui grid">
+        <div class="five wide column"></div>
+        <div class="six wide column small-margin-top">
+            <div class="ui segment">
+                <div class="content">
+                    <h2>IMC</h2>
+                    <form class="ui form">
+                        <div class="field">
+                            <label>Peso: </label>
+                            <div class="ui right labeled input">
+                                <input id="weight" type="text">
+                                <div class="ui basic label">Kg</div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Altura: </label>
+                            <div class="ui right labeled input">
+                                <input id="height" type="text">
+                                <div class="ui basic label">m</div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Sexo: </label>
+                            <div class="ui selection dropdown">
+                                <input type="hidden" name="gender">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">Sexo</div>
+                                <div class="menu">
+                                    <div class="item" data-value="1">Masculino</div>
+                                    <div class="item" data-value="0">Feminino</div>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="resultButton" class="ui blue button" type="button">Resultado</button>
+                    </form>
+                </div>
+            </div>
+            <div id="resultMessage" class="ui icon message hide">
+              <i class="icon"></i>
+              <div class="content">
+                <div class="header">
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

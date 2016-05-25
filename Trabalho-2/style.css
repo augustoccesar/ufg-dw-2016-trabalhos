@@ -1,0 +1,15 @@
+.full_width {
+  width: 100%;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: flex !important;
+}
+
+.small-margin-top {
+    margin-top: 3em;
+}
