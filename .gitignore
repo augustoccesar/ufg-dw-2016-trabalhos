@@ -1,3 +1,4 @@
 .idea
-Trabalho-3/Trabalho-3-Augusto-Cesar-Freitas-e-Silva.iml
-Trabalho-3/target
+*.iml
+*out
+*target
